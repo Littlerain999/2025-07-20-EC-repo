@@ -2,7 +2,7 @@ module.exports = async (req, res, next) => {
     try {
         const validation = require("../../validation/index").user.signUp
         const data = req.body
-        const { error, value } = validation.validate(data)
+        const { error, value } = validation.validate(data, { allowUnknown: true })
         const { hash, salts } = require("../../config")
         if (!error) {
             const { password, ...other } = value

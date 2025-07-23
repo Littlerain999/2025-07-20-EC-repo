@@ -16,7 +16,7 @@ module.exports = model("product",  new Schema({
     ref: "category"
   },
 
-  createdBy: {
+  productOf: {
     type: Types.ObjectId,
     ref: "user"
   }

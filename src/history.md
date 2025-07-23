@@ -53,11 +53,11 @@ phase 5: create validation
 
 phase 6: add functioning to the controllers []
     For:
-        > USER []
+        > USER [done]
             # sign-up [done]
             # login [done]
         > PRODUCT []
-            # create [pending]
+            # create [done]
             # get all []
             # get single []
             # update []
@@ -67,6 +67,14 @@ phase 6: add functioning to the controllers []
             # get all []
             # delete []
     changed to middlewarev   Reason: A middleware is required before create
-        >> hasToken [pending]
+        >> hasToken [done]
         >> isBuyer []
         >> isSeller []
+
+
+checking... [2025-07-23-12:15]
+    1. user
+        a. sign-up []
+            > without role [success]
+            > with role [success]
+        b. login [success]
